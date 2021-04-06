@@ -17,6 +17,9 @@ on:
 name: Docker Actions
 
 on: [push]
+name: Docker Actions
+
+on: [push]
 
 jobs:
   action:
@@ -24,3 +27,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+
+      - name: hello-action
+        uses: ./.github/actions/hello-world
